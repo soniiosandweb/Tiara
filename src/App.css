@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Montserrat";
+  src: url('./assests/fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url('./assests/fonts/Montserrat-Medium.ttf');
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url('./assests/fonts/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url('./assests/fonts/Montserrat-SemiBold.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-primary: #770A44;
+  --color-light-pink: #FF48AA80;
+  --color-form-bg: #FF48AA9E;
+  --color-pink: #FF48AA;
+  --color-light-pink: #FFD4EB;
+  --color-transparent: transparent;
+  --font-semibold: "Montserrat-SemiBold";
+  --font-bold: "Montserrat-Bold";
+  --font-medium: "Montserrat-Medium";
+  --font-regular: "Montserrat";
+  --bs-border-width: 0;
+  --bs-border-radius-lg: 8px;
+  --bs-body-bg: #FFFDFD;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*:focus,
+*:focus-visible {
+  box-shadow: unset !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  font-family: var(--font-regular);
+  font-size: 15px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  margin: 0;
 }

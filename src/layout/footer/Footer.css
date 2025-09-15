@@ -1,0 +1,188 @@
+.main_footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    position: relative;
+}
+.main_footer::after {
+    content: "";
+    background-image: url("../../assests/images/footer_image.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 10%;
+}
+.main_footer .container {
+    position: relative;
+    z-index: 1;
+}
+.footer_top_section {
+    display: grid;
+    padding: 5rem 0;
+    gap: 2rem;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, auto);
+}
+.footer_cols.col1 {
+    display: flex;
+}
+.footer_logo_link {
+    display: inline-block;
+}
+.footer_logo_link .footer_logo {
+    width: 118px;
+    object-fit: contain;
+}
+.footer_cols.col1 .footer_about_text {
+    max-width: 214px;
+    margin-top: 50px;
+}
+.footer_cols .footer_heading {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font-medium);
+    margin-bottom: 20px;
+}
+.footer_cols .footer_menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer_cols .footer_menu .footer_menu_item a {
+    color: var(--color-white);
+    font-size: 15px;
+    text-decoration: unset;
+}
+.footer_cols .footer_menu .footer_menu_item a:hover,
+.footer_details_item a:hover .footer_contact_text {
+    color: var(--color-pink);
+}
+.footer_details_block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer_details_block .footer_details_item {
+    display: flex;
+    gap: 10px;
+}
+.footer_details_item .contact_icons {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+.footer_details_item a,
+.footer_contact_text {
+    max-width: 172px;
+    color: var(--color-white);
+    text-decoration: unset;
+}
+.social_items_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.social_items_list .social_icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+@media (max-width: 1199px) {
+    .footer_top_section {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+@media (max-width: 991px) {
+    .footer_top_section {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media (max-width: 767px) {
+    .footer_top_section {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        gap: 3rem;
+        padding: 3rem 0;
+    }
+    .footer_cols.col1 {
+        flex-direction: column;
+    }
+    .footer_cols.col1 .footer_about_text {
+        max-width: 80%;
+        margin: 20px auto auto;
+        text-align: center;
+    }
+    .footer_top_section .footer_cols {
+        text-align: center;
+    }
+    .footer_details_block .footer_details_item {
+        justify-content: center;
+        text-align: left;
+    }
+    .footer_details_block {
+        gap: 14px;
+    }
+    .social_items_list {
+        justify-content: center;
+    }
+    .social_items_list .social_icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+/* Disclaimer content */
+.footer_disclaimer {
+    padding-bottom: 5rem;
+}
+.disclaimer_heading {
+    font-size: 22px;
+    font-family: var(--font-bold);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.displaimer_content {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+@media (max-width: 767px) {
+    .disclaimer_heading,
+    .displaimer_content {
+        text-align: center;
+    }
+}
+
+/* Footer bottom */
+.footer_bottom_section {
+    padding-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_bottom_section .paragraph {
+    font-size: 13px;
+}
+.footer_bottom_section .paragraph a {
+    color: var(--color-white);
+    text-underline-offset: 2px;
+}
+.footer_bottom_section .paragraph a:hover {
+    color: var(--color-pink);
+}
+@media (max-width: 767px) {
+    .footer_bottom_section {
+        flex-direction: column;
+    }
+}

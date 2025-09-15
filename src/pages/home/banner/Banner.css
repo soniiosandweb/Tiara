@@ -1,0 +1,49 @@
+.home_banner_section {
+    background-image: url("../../../assests/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home_banner_section .home_banner_content {
+    min-height: 771px;
+    padding: 10rem 0;
+    display: flex;
+}
+.home_banner_content_div {
+    background-color: rgba(217, 217, 217, calc(0.73 * 0.72));
+    width: 541px;
+    height: max-content;
+    margin: auto 0 auto auto;
+    padding: 30px 31px 30px;
+}
+.home_banner_heading {
+    font-size: 45px;
+    color: var(--color-primary);
+    font-family: var(--font-bold);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.home_banner_content_div .banner_text {
+    font-size: 20px;
+    color: var(--color-black);
+    font-family: var(--font-medium);
+    font-weight: 500;
+    margin: 0;
+}
+@media (max-width: 767px) {
+    .home_banner_heading {
+        font-size: 35px;
+    }
+    .home_banner_content_div .banner_text {
+        font-size: 18px;
+    }
+    .home_banner_content_div {
+        width: 100%;
+    }
+    .home_banner_section .home_banner_content {
+        min-height: 508px;
+        padding: 10rem 0 6rem;
+    }
+    .home_banner_section {
+        background-image: url("../../../assests/images/banner_mobile.png");
+    }
+}
