@@ -110,14 +110,14 @@
     background-color: var(--color-pink);
     color: var(--color-white);
     font-size: 16px;
+    line-height: 20px;
     font-family: var(--font-medium);
     font-weight: 500;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    font-size: 14px;
     text-decoration: none;
     transition: background 0.3s;
-    padding: 20px 8px;
+    padding: 12.5px 8.5px;
     border-radius: 0;
 }
 .fixed_btns_section .btn_fixed_header:hover{ 

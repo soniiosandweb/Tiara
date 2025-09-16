@@ -19,7 +19,7 @@
   --color-white: #fff;
   --color-black: #000;
   --color-primary: #770A44;
-  --color-light-pink: #FF48AA80;
+  --color-pink-50: #FF48AA80;
   --color-form-bg: #FF48AA9E;
   --color-pink: #FF48AA;
   --color-light-pink: #FFD4EB;
@@ -39,7 +39,58 @@
 body {
   font-family: var(--font-regular);
   font-size: 15px;
+  line-height: 18px;
+  color: var(--color-black);
 }
 p {
   margin: 0;
+}
+.padding-top {
+  padding-top: 5rem;
+}
+.padding-bottom {
+  padding-bottom: 5rem;
+}
+.margin-2 {
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .padding-top {
+    padding-top: 4rem;
+  }
+  .padding-bottom {
+    padding-bottom: 4rem;
+  }
+}
+.container {
+  max-width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 575px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* Wobble horizontal shake */
+@keyframes animation-wobble-horizontal {
+    16.65% {
+        transform: translateX(8px);
+    }
+    33.3% {
+        transform: translateX(-6px);
+    }
+    49.95% {
+        transform: translateX(4px);
+    }
+    66.6% {
+        transform: translateX(-2px);
+    }
+    83.25% {
+        transform: translateX(1px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }

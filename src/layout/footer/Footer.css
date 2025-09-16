@@ -38,6 +38,7 @@
 .footer_cols.col1 .footer_about_text {
     max-width: 214px;
     margin-top: 50px;
+    line-height: 20px;
 }
 .footer_cols .footer_heading {
     font-size: 20px;
@@ -51,12 +52,13 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 .footer_cols .footer_menu .footer_menu_item a {
     color: var(--color-white);
     font-size: 15px;
     text-decoration: unset;
+    line-height: 20px;
 }
 .footer_cols .footer_menu .footer_menu_item a:hover,
 .footer_details_item a:hover .footer_contact_text {
@@ -65,15 +67,15 @@
 .footer_details_block {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 1rem;
 }
 .footer_details_block .footer_details_item {
     display: flex;
     gap: 10px;
 }
 .footer_details_item .contact_icons {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     object-fit: contain;
 }
 .footer_details_item a,
@@ -81,6 +83,7 @@
     max-width: 172px;
     color: var(--color-white);
     text-decoration: unset;
+    line-height: 20px;
 }
 .social_items_list {
     padding: 0;
@@ -91,18 +94,17 @@
     flex-wrap: wrap;
 }
 .social_items_list .social_icon {
-    width: 50px;
-    height: 50px;
+    width: 36px;
+    height: 36px;
     object-fit: contain;
+    transition: all 0.2s ease-in-out;
 }
-@media (max-width: 1199px) {
-    .footer_top_section {
-        grid-template-columns: repeat(3, auto);
-    }
+.social_items_list .social_icon:hover {
+    transform: scale(1.2);
 }
 @media (max-width: 991px) {
     .footer_top_section {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(3, auto);
     }
 }
 @media (max-width: 767px) {
@@ -133,10 +135,6 @@
     .social_items_list {
         justify-content: center;
     }
-    .social_items_list .social_icon {
-        width: 40px;
-        height: 40px;
-    }
 }
 /* Disclaimer content */
 .footer_disclaimer {
@@ -146,6 +144,7 @@
     font-size: 22px;
     font-family: var(--font-bold);
     font-weight: 700;
+    line-height: 30px;
     margin-bottom: 20px;
 }
 .displaimer_content {
@@ -155,6 +154,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    line-height: 22px;
 }
 @media (max-width: 767px) {
     .disclaimer_heading,
@@ -172,7 +172,8 @@
     align-items: center;
 }
 .footer_bottom_section .paragraph {
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 30px;
 }
 .footer_bottom_section .paragraph a {
     color: var(--color-white);

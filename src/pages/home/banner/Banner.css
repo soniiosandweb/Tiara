@@ -13,17 +13,19 @@
     width: 541px;
     height: max-content;
     margin: auto 0 auto auto;
-    padding: 30px 31px 30px;
+    padding: 40px 32px 57px;
 }
 .home_banner_heading {
     font-size: 45px;
+    line-height: 47px;
     color: var(--color-primary);
     font-family: var(--font-bold);
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 .home_banner_content_div .banner_text {
     font-size: 20px;
+    line-height: 25px;
     color: var(--color-black);
     font-family: var(--font-medium);
     font-weight: 500;
@@ -32,12 +34,17 @@
 @media (max-width: 767px) {
     .home_banner_heading {
         font-size: 35px;
+        margin-bottom: 13px;
+        line-height: 37px;
     }
     .home_banner_content_div .banner_text {
         font-size: 18px;
+        line-height: 20px;
     }
     .home_banner_content_div {
-        width: 100%;
+        width: 326px;
+        margin: auto;
+        padding: 22px 20px;
     }
     .home_banner_section .home_banner_content {
         min-height: 508px;

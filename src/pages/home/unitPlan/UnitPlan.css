@@ -1,0 +1,38 @@
+.pink_banner_section {
+    background-image: url("../../../assests/images/pink_banner.png");
+    background-size: cover;
+    background-position: center right;
+}
+.pink_banner_content {
+    min-height: 328px;
+    display: flex;
+    align-items: center;
+}
+.pink_banner_heading {
+    margin: 0;
+    font-size: 55px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: var(--font-regular);
+}
+.unit_plan_lists {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.unit_plan_lists .unit_plan_image {
+    width: 100%;
+    cursor: pointer;
+}
+.yarl__thumbnails_thumbnail {
+    border: none !important;
+}
+@media (max-width: 767px) {
+    .pink_banner_heading {
+        font-size: 30px;
+    }
+    .pink_banner_content {
+        min-height: 187px;
+    }
+}

@@ -1,0 +1,89 @@
+.amenities_lists_block {
+    max-width: 968px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.amenities_lists_item {
+    padding: 1rem 1.5rem;
+    text-align: center;
+    border-right: 0.5px solid var(--color-primary);
+    border-bottom: 0.5px solid var(--color-primary);
+    cursor: pointer;
+}
+.amenities_lists_item:nth-child(4n),
+.amenities_lists_item:last-child {
+    border-right: 0;
+}
+.amenities_lists_item:last-child,
+.amenities_lists_item:nth-last-child(2),
+.amenities_lists_item:nth-last-child(3),
+.amenities_lists_item:nth-last-child(4) {
+    border-bottom: 0;
+}
+.amenities_lists_item .amenities_img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+.amenities_lists_item .paragraph {
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: var(--font-medium);
+    color: var(--color-primary);
+}
+.amenities_lists_item:hover .amenities_img {
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-name: animation-wobble-horizontal;
+    animation-timing-function: ease-in-out;
+}
+
+@media (max-width: 991px) {
+    .amenities_lists_block {
+        max-width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .amenities_lists_item:nth-child(3n) {
+        border-right: 0;
+    }
+    .amenities_lists_item:last-child {
+        border-right: 0 !important;
+    }
+    .amenities_lists_item:nth-child(4n) {
+        border-right: 0.5px solid var(--color-primary);
+    }
+    .amenities_lists_item:nth-last-child(4) {
+        border-bottom: 0.5px solid var(--color-primary);
+    }
+}
+@media (max-width: 767px) {
+    .amenities_lists_item .paragraph {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .amenities_lists_item .amenities_img {
+        width: 60px;
+        height: 60px;
+    }
+}
+@media (max-width: 575px) {
+    .amenities_lists_block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .amenities_lists_item {
+        padding: 1rem 10px;
+    }
+    .amenities_lists_item:nth-child(2n),
+    .amenities_lists_item:last-child {
+        border-right: 0 !important;
+    }
+    .amenities_lists_item:nth-child(3n) {
+        border-right: 0.5px solid var(--color-primary);
+    }
+    .amenities_lists_item:nth-last-child(3) {
+        border-bottom: 0.5px solid var(--color-primary);
+    }
+}
