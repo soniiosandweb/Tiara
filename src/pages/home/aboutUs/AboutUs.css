@@ -21,7 +21,6 @@
 }
 .about_us_image {
     position: relative;
-    max-height: 476px;
     margin-top: 2rem;
 }
 .about_us_image::after {

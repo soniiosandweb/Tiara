@@ -1,0 +1,111 @@
+.contact_us_section {
+    background-image: url("../../../assests/images/contact-banner.png");
+    background-size: cover;
+    background-position: center;
+}
+.contact_us_block {
+    max-width: 1092px;
+    margin: auto;
+}
+.contact_us_section .heading3.heading_text {
+    font-weight: 500;
+    font-family: var(--font-medium);
+    color: var(--color-white);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.get_in_touch_block {
+    background-color: var(--color-form-bg);
+    border-radius: 15px;
+    padding: 2rem 3rem;
+    max-width: 887px;
+    margin: auto;
+}
+.get_in_touch_block .heading3 {
+    color: var(--color-white);
+}
+.get_in_touch_form .form-row {
+    display: flex;
+    gap: 12px;
+    padding: 6px 0;
+}
+.get_in_touch_form .form-row .form-cols {
+    width: 100%;
+}
+.get_in_touch_form .form-row .invalid-feedback {
+    color: var(--color-white);
+}
+.get_in_touch_form .form-row .form-control {
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 700;
+    font-family: var(--font-bold);
+    color: var(--color-white);
+    background-color: var(--color-transparent);
+    border: 1px solid var(--color-white);
+    border-radius: 3px;
+    padding: 10.5px 20px;
+}
+.get_in_touch_form .form-row .form-control::placeholder,
+.PhoneInputInput::placeholder {
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+.PhoneInputInput {
+    background-color: var(--color-transparent);
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: var(--color-white);
+    padding-left: 15px;
+}
+.PhoneInputCountrySelectArrow {
+    display: none !important;
+}
+.get_in_touch_form .form-row.form-btn-row {
+    padding-top: 2rem;
+}
+.btn_submit_contact {
+    padding: 4.5px 15px;
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 700;
+    font-family: var(--font-bold);
+    color: var(--color-white);
+    background-color: var(--color-pink);
+    border: 1px solid var(--color-pink);
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.btn_submit_contact:hover {
+    background-color: var(--color-transparent);
+    border-color: var(--color-white);
+}
+@media (max-width: 767px) {
+    .contact_us_section .heading3.heading_text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .get_in_touch_block .heading3 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .get_in_touch_form .form-row .form-control {
+        padding: 4.5px 15px;
+    }
+    .btn_submit_contact {
+        padding: 0.5px 5.5px;
+        width: max-content;
+    }
+    .get_in_touch_form .form-row {
+        flex-direction: column;
+    }
+}
+@media (max-width: 575px) {
+    .get_in_touch_block {
+        padding: 1.5rem;
+    }
+    .get_in_touch_form .form-row.form-btn-row {
+        padding-top: 1rem;
+    }
+}

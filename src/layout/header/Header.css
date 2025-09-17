@@ -4,7 +4,7 @@
     top:0;
     z-index: 12;
 }
-.main_header.scroll {
+.main_header.home_header.scroll {
     background-color: var(--color-transparent);
     height:0;
 }
@@ -16,7 +16,7 @@
     position: absolute;
     top: 0;
 }
-.main_header.scroll::after {
+.main_header.scroll.home_header::after {
     height: 224px;
     background: linear-gradient(180deg, var(--color-primary) 0%, rgba(221, 19, 127, 0) 100%);
 }
@@ -64,6 +64,7 @@
     font-weight: 700;
     color: var(--color-white);
     padding: 12px 10px;
+    cursor: pointer;
 }
 .header_offcanvas .navbar-nav .nav-link:last-child {
     padding-right: 0;

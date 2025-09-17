@@ -32,6 +32,12 @@
   --bs-border-radius-lg: 8px;
   --bs-body-bg: #FFFDFD;
 }
+.btn-primary {
+  --bs-btn-active-bg: var(--color-primary);
+  --bs-btn-active-border-color: var(--color-primary);
+  --bs-btn-disabled-bg: var(--color-pink);
+  --bs-btn-disabled-border-color: var(--color-pink);
+}
 *:focus,
 *:focus-visible {
   box-shadow: unset !important;

@@ -16,6 +16,8 @@ import calendarIcon from "../../../assests/images/connectivity/calendar.png";
 import locationIcon from "../../../assests/images/connectivity/location.png";
 import sofaIcon from "../../../assests/images/connectivity/long-sofa.png";
 import poolIcon from "../../../assests/images/connectivity/pool-icon.png";
+import { useState } from "react";
+import EnquiryForm from "../../../components/enquiryForm/EnquiryForm";
 
 // Connectivity options
 const connectivityOptions = [
@@ -87,6 +89,9 @@ const livingExperiences = [
 ]
 
 const Connectivity = () => {
+
+    const [showEnquiry, setShowEnquiry] = useState(false);
+
     return(
         <>
             <div className="connectivity_section padding-top" id="connectivity">
@@ -109,7 +114,7 @@ const Connectivity = () => {
                                 ))}
                             </div>
                             <div className="btn_div">
-                                <Button className="btn_register_interest">
+                                <Button className="btn_register_interest" onClick={() => setShowEnquiry(true)}>
                                     <img
                                         src={openIcon}
                                         alt="Open"
@@ -177,6 +182,12 @@ const Connectivity = () => {
                     </Row>
                 </Container>
             </div>
+
+            {/* Enquiry Form */}
+            <EnquiryForm
+                show={showEnquiry}
+                onHide={() => setShowEnquiry(false)}
+            />
         </>
     )
 }

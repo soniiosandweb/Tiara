@@ -54,13 +54,14 @@
     flex-direction: column;
     gap: 10px;
 }
-.footer_cols .footer_menu .footer_menu_item a {
+.footer_cols .footer_menu .footer_menu_item .link{
     color: var(--color-white);
     font-size: 15px;
     text-decoration: unset;
     line-height: 20px;
+    cursor: pointer;
 }
-.footer_cols .footer_menu .footer_menu_item a:hover,
+.footer_cols .footer_menu .footer_menu_item .link:hover,
 .footer_details_item a:hover .footer_contact_text {
     color: var(--color-pink);
 }

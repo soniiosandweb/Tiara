@@ -1,0 +1,52 @@
+.faq_section .heading3 {
+    color: #3F1C09;
+    font-weight: 500;
+    font-family: var(--font-medium);
+    text-align: center;
+}
+.faq_section .accordion {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    --bs-accordion-btn-icon: url("../../../assests/images/down-chevron.png");
+    --bs-accordion-btn-active-icon: url("../../../assests/images/down-chevron.png");
+    --bs-accordion-btn-icon-width: 40px;
+}
+.faq_section .accordion-item .accordion-button {
+    background-color: #FFF5FA;
+    border-radius: 15px !important;
+    font-size: 20px;
+    color: #3F1C09;
+    font-weight: 500;
+    font-family: var(--font-medium);
+    padding: 14px 30px;
+    gap: 15px;
+}
+.faq_section .accordion-item .accordion-button:not(.collapsed) {
+    border-radius: 15px 15px 0 0 !important;
+    background-color: var(--color-light-pink);
+}
+.faq_section .accordion-item .accordion-button:hover {
+    background-color: var(--color-light-pink);
+}
+.faq_section .accordion-item .accordion-body {
+    background-color: var(--color-light-pink);
+    border-radius: 0 0 15px 15px;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--color-black);
+    padding-top: 0;
+}
+@media (max-width: 767px) {
+    .faq_section .accordion-item .accordion-button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+    .faq_section .accordion {
+        --bs-accordion-btn-icon-width: 28px;
+    }
+    .faq_section .accordion-item .accordion-body {
+        font-size: 14px;
+    }
+}

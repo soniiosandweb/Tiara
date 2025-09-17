@@ -63,7 +63,7 @@ const Gallery = () => {
 
     return(
         <>
-            <div className="gallery_banner_section padding-top padding-bottom">
+            <div className="gallery_banner_section padding-top padding-bottom" id="gallery">
                 <Container>
                     <Row>
                         <Col>
