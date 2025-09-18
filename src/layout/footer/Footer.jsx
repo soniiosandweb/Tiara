@@ -8,6 +8,10 @@ import facebookIcon from "../../assests/images/facebook.png";
 import instagramIcon from "../../assests/images/instagram.png";
 import twitterIcon from "../../assests/images/twitter.png";
 import youtubeIcon from "../../assests/images/youtube.png";
+import facebookColor from "../../assests/images/color-facebook.png";
+import instagramColor from "../../assests/images/color-instagram.png";
+import twitterColor from "../../assests/images/color-twitter.png";
+import youtubeColor from "../../assests/images/color-youtube.png";
 import ScrollToSection from "../../ScrollLink";
 
 // contact details
@@ -33,21 +37,25 @@ const contactDetails = [
 const socialLinks = [
     {
         icon: twitterIcon,
+        hover: twitterColor,
         link: "/",
         title: "Twitter",
     },
     {
         icon: facebookIcon,
+        hover: facebookColor,
         link: "/",
         title: "Facebook",
     },
     {
         icon: youtubeIcon,
+        hover: youtubeColor,
         link: "/",
         title: "Youtube",
     },
     {
         icon: instagramIcon,
+        hover: instagramColor,
         link: "/",
         title: "Instagram",
     }
@@ -141,6 +149,7 @@ const Footer = () => {
                                         <li key={i} className="social_item">
                                             <a href={item.link} target="_blank" rel="noreferrer">
                                                 <img src={item.icon} alt={item.title} className="social_icon" />
+                                                <img src={item.hover} alt={item.title} className="social_icon_hover" />
                                             </a>
                                         </li>
                                     ))}

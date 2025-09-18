@@ -76,7 +76,7 @@ const livingExperiences = [
     },
     {
         image: locationIcon,
-        text: "Prime Locations Across Dubai",
+        text: "Prime Locations",
     },
     {
         image: sofaIcon,

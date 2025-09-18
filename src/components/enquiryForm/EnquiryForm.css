@@ -14,7 +14,7 @@
   pointer-events: auto;
 }
 .enquiry_form_div {
-    --bs-modal-width: 521px;
+    --bs-modal-width: 450px;
     margin-right: 20px;
 }
 .enquiry_form_div .modal-content {

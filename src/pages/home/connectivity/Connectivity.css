@@ -56,7 +56,7 @@
     color: var(--color-white);
 }
 .btn_register_interest:hover .btn_icon {
-    filter: invert(1);
+    filter: brightness(0) invert(1);
 }
 .heading4 {
     font-size: 35px;
@@ -96,6 +96,7 @@
     height: 820px;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .areas_images_conent {
     height: 100%;
