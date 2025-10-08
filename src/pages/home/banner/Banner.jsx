@@ -4,7 +4,7 @@ import "./Banner.css";
 const Banner = () => {
     return(
         <div className="home_banner_section">
-            <Container>
+            <Container fluid>
                 <Row>
                     <Col>
                         <div className="home_banner_content">

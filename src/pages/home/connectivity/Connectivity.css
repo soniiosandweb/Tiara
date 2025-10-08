@@ -89,6 +89,9 @@
         grid-template-columns: repeat(1, 225px);
         justify-content: center;
     }
+    .connectivity_section .btn_register_interest {
+        margin: auto;
+    }
 }
 
 /* Areas Images Section */

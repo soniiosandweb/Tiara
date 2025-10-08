@@ -5,8 +5,12 @@
 }
 .home_banner_section .home_banner_content {
     min-height: 771px;
+    height: 100vh;
     padding: 10rem 0;
     display: flex;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .home_banner_content_div {
     background-color: rgba(217, 217, 217, calc(0.73 * 0.72));
@@ -31,10 +35,46 @@
     font-weight: 500;
     margin: 0;
 }
+@media (min-width: 1500px) and (min-height: 700px) {
+    .home_banner_content_div {
+        width: clamp(541px, 50%, 600px);
+    }
+    .home_banner_heading {
+        font-size: clamp(45px, 6vh, 58px);
+        line-height: 1;
+    }
+    .home_banner_content_div .banner_text {
+        font-size: clamp(20px, 3vh, 32px);
+        line-height: 1.2;
+    }
+}
 @media (max-width: 767px) {
     .home_banner_heading {
-        font-size: 35px;
+        font-size: 42px;
         margin-bottom: 13px;
+        line-height: 44px;
+    }
+    .home_banner_content_div .banner_text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .home_banner_content_div {
+        width: 450px;
+        margin: auto;
+        padding: 22px 20px;
+    }
+    .home_banner_section .home_banner_content {
+        min-height: 508px;
+        padding: 10rem 0 6rem;
+        max-width: 100%;
+    }
+    .home_banner_section {
+        background-image: url("../../../assests/images/banner_mobile.png");
+    }
+}
+@media (max-width: 575px) {
+    .home_banner_heading {
+        font-size: 35px;
         line-height: 37px;
     }
     .home_banner_content_div .banner_text {
@@ -43,14 +83,5 @@
     }
     .home_banner_content_div {
         width: 326px;
-        margin: auto;
-        padding: 22px 20px;
-    }
-    .home_banner_section .home_banner_content {
-        min-height: 508px;
-        padding: 10rem 0 6rem;
-    }
-    .home_banner_section {
-        background-image: url("../../../assests/images/banner_mobile.png");
     }
 }

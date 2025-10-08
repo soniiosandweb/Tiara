@@ -95,7 +95,7 @@ const Header = () => {
         <>
             <div className={`main_header ${scrollClass} ${locationValue[1] === "" ||  menuLists.some(item => item.id === locationValue[1]) ? "home_header" : ""}`}>
                 <Navbar key={"lg"} expand={"lg"}>
-                    <Container >
+                    <Container fluid>
                         <Navbar.Brand href="/">
                             <img src={logo} alt="Tiara Logo" className="logo_header" />
                         </Navbar.Brand>
